@@ -1,0 +1,35 @@
+@import url(./theme.css);
+
+h1 a{
+  transition: ease-in-out .3s;
+}
+h1 a:hover{
+  color: #FC5185;
+  transition: ease-in-out .3s;
+}
+section .intro{
+  width: 50rem;
+  margin-top: 2rem;
+  margin-left: 10rem;
+  margin-bottom: 3rem;
+}
+section .intro h2{
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+.mes-info{
+  width: 70%;
+  margin: auto;
+  display: flex;
+  gap: 5rem;
+}
+
+.mesinfo1, .mesinfo2{
+  border: solid 1px #ffff;
+  border-radius: 2rem;
+  padding: 3rem;
+}
+.mesinfo1 p, .mesinfo2 p{
+  line-height: 3rem;
+}

@@ -1,0 +1,146 @@
+@import url(/css/reset.css);
+
+body{
+  background-color: #673DE6;
+}
+
+header{
+  position: relative;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header h1{
+  font-size: 1.8rem;
+  font-weight: 400;
+  letter-spacing: 1rem;
+  color: #ffff;
+}
+header h1 span{
+  font-weight: 800;
+}
+header nav{
+  position: absolute;
+  right: 2rem;
+}
+header nav ul{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+header li a{
+  color: #ffff;
+  transition: ease-in-out .3s;
+}
+header li a:hover{
+  color: #631A86;
+  transition: ease-in-out .3s;
+}
+header li a::after{
+  position: relative;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: #631A86;
+  transform: scale(0);
+  transition: transform .3s ease-in-out;
+}
+header li a:hover::after{
+  transform: scale(1);
+}
+
+/*Section principale*/
+section{
+  position: relative;
+}
+section .cercle1{
+  position: fixed;
+  width: 8rem;
+  height: 8rem;
+  left: -3%;
+  top: 60%;
+  border: solid 2rem #631A86;
+  border-radius: 50%;
+}
+section .cercle2{
+  position: fixed;
+  width: 25rem;
+  height: 25rem;
+  right: -10%;
+  top: 20%;
+  background-color: #631A86;
+  border-radius: 50%;
+}
+section .bar1{
+  width: 20rem;
+  height: 3rem;
+  position: fixed;
+  right: -2%;
+  top: 70%;
+  background-color: #AF95FD;
+  border-radius: 2px;
+}
+section .bar2{
+  width: 10rem;
+  height: 3rem;
+  position: fixed;
+  right: -2%;
+  top: 62%;
+  background-color: #AF95FD;
+  border-radius: 2px;
+}
+
+section .info-loic{
+  position: fixed;
+  width: 70rem;
+  top: 23%;
+  left: 15%;
+}
+
+section h2{
+  color: #ffff;
+  font-size: 5rem;
+  padding-bottom: 2rem;
+}
+section p{
+  color: #ffff;
+}
+
+section button{
+  margin-top: 2rem;
+  background-color: #FC5185;
+  color: #fff;
+  padding: 1.5rem;
+  width: 20rem;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: ease-in-out .3s;
+}
+section button:hover{
+  background-color: #631A86;
+  transition: ease-in-out .3s;
+}
+section .icons{
+  display: flex;
+  gap: 4rem;
+  margin-top: 2rem;
+}
+section .icons img{
+  width: 40px;
+  opacity: .8;
+  transition: ease-in-out .3s;
+}
+section .icons img:hover{
+  transform: scale(1.1);
+  opacity: 1;
+  transition: ease-in-out .3s;
+}
+
+footer{
+  text-align: center;
+  color: #ffff;
+  padding: 1rem;
+}

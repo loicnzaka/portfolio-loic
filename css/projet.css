@@ -1,1 +1,112 @@
 @import url(apropos.css);
+
+
+.intro p{
+  margin-bottom: 3rem;
+}
+.intro a{
+  color: #ffff;
+  border: none;
+  background-color: #FC5185;
+  transition: ease-in-out .3s;
+  border-radius: 5px;
+  padding: 1rem;
+}
+.intro a:hover{
+  border: solid 1px #fff;
+  background-color: transparent;
+}
+
+/* Deuxième section */
+.section-two{
+  text-align: center;
+  margin: 60px auto;
+}
+.section-two h3{
+  text-align: center;
+  font-weight: 300;
+  font-size: 3rem;
+  color: #ffff;
+  padding-bottom: 20px;
+}
+.section-two .apercu-projets{
+  display: grid;
+  grid-template-columns: 330px 330px 330px;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  gap: 30px;
+}
+.section-two .apercu-projets a{
+  transition: 0.3s ease-in-out;
+}
+.section-two .apercu-projets a:hover{
+  transform: translateY(-15px);
+  transition: 0.3s ease-in-out;
+}
+
+.section-two .apercu-projets a:hover::after{
+  content: "\00003E";
+  position: absolute;
+  top: 92%;
+  right: 10px; /*position de la flèche */
+  transform: translateY(-50%);
+  font-size: 4rem;
+  color: #ffff;
+  opacity: 0; /* Flèche invisible au départt */
+  animation: slideIn 0.5s ease forwards; /* Animation de la flèche */
+}
+@keyframes slideIn {
+  from {
+      opacity: 0;
+      right: 25px; /* Position de départ de la flèche */
+  }
+  to {
+      opacity: 1;
+      right: 10px; /* Position finale de la flèche */
+  }
+}
+.section-two .apercu-projets .contenu-1,
+.section-two .apercu-projets .contenu-2,
+.section-two .apercu-projets .contenu-3{
+  width: 330px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  border: solid 1px #631A86;
+  border-radius: 5px;
+  background-color: transparent;
+  box-shadow: 2px 2px 5px rgba(0,0,0, 0.2), 10px 10px 10px rgba(0,0,0, 0.2)inset ;
+}
+.section-two .apercu-projets .img-contenu{
+  width: 90%;
+  height: 60%;
+  margin: 10px auto;
+}
+
+.section-two .apercu-projets .img-contenu img{
+  width: 330px;
+  height: 184px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.section-two .apercu-projets .contenu-1 h4,
+.section-two .apercu-projets .contenu-2 h4,
+.section-two .apercu-projets .contenu-3 h4{
+  font-size: 1.6rem;
+  color: #ffff;
+  font-weight: 400;
+  text-align: left;
+  padding-top: 10px;
+  padding-left: 20px;
+}
+.section-two .apercu-projets .contenu-1 p,
+.section-two .apercu-projets .contenu-2 p,
+.section-two .apercu-projets .contenu-3 p{
+  color: #c4c4c5;
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-align: left;
+  padding-left: 20px;
+}
